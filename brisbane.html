@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top" id="expand">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="ioc.html"> IOC </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="paris.html"> Paris 2024</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="milano.html"> Milano Cortina 2026</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="LA2028.html"> LA 2028</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="brisbane.html"> Brisbane 2032</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" href="muesum.html"> Meseum</a>
+                </li>
+            </ul>
+    </nav>
+    <nav class="navbar navbar-expand-sm bg-light fixed-top mt-5">
+        <div class="container-fluid">
+            <div class="col-sm-3">
+                <a href="home.html">
+                    <img src="https://olympics.com/images/static/b2p-images/logo_color.svg">
+                </a>
+            </div>
+            <div class="col-sm-7 collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav " id="nav2">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Olympics Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Ahletes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">Olympics Channel</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cl-sm-2">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" id="search">
+                    <i class="fa-solid fa-magnifying-glass "></i>
+                </button>
+                <input style="display: none;" type="text" id="input" placeholder="Search..">
+                <script>
+                    $("#search").click(function () {
+                        $("#input").show();
+                    });
+
+                    $("#search").click(function () {
+                        $("#search").hide();
+                    });
+
+                    $(document).ready(function () {
+                        $("#search").on("keyup", function () {
+                            var value = $(this).val().toLowerCase();
+                            $("#project #bannerimage").filter(function () {
+                                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                            });
+                        });
+                    });
+                </script>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                    <i class="fa-solid fa-bars "></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="bannerimage11">
+        <div>
+            <img id="paris87"
+                src="https://img.olympicchannel.com/images/image/private/f_auto/t_s_fog_headerLogo/primary/mt2p6xy5fbsxazpfjdny" />
+        </div>
+        <div id="text" id="project">
+            <nav class="navbar navbar-expand-sm navbar-white bg-white">
+                <div class="container">
+
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <div class="navbar-nav me-auto">
+                            <div class="row">
+                                <div class="nav-item col-3">
+                                    <h6 id="wer45">BRISBANE 2032</h6>
+                                </div>
+                                <div class="nav-item pl-3 col-3">
+                                    <h6 id="wer45">23 July - 8 August</h6>
+                                </div>
+                                <div class="nav-item col-3">
+                                    <h6 id="wer45">3662 days </h6>
+                                </div>
+                                <div class="nav-item col-3">
+                                    <h6 id="wer45">Australia                                    </h6>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <section id="work2" id="project" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card border border-0">
+                    <div class="card-header ml-3 border border-0">
+                        <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_16-9_380/primary/lxptcbbgzgy9t3hna1gd"
+                            class="olytel" style="object-fit: cover;" />
+                    </div>
+                    <div class="card-body border border-0">
+                        <p class="idonesia"><a href="#" class="text-black woo"> Experience</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card border border-0">
+                    <div class="card-header border border-0">
+                        <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_16-9_380/primary/ypn7tdfka5gre10tp3rz"
+                            class="olytel2" style="object-fit: cover;" />
+                    </div>
+                    <div class="card-body border border-0">
+                        <p class="idonesia"><a href="#" class="text-black woo">Welcome to Quterland</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card border border-0">
+                    <div class="card-header border border-0">
+                        <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_16-9_380/primary/l4lrkcbwls06pvezedun"
+                            class="olytel2" style="object-fit: cover;" />
+                    </div>
+                    <div class="card-body border border-0">
+                        <p class="idonesia"><a href="#" class="text-black woo">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid" id="project">
+        <div class="row">
+            <div class="col-5">
+                <h2 style="margin-top: 100px; padding-left: 70px;font-size: 100px;color: #000; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; line-height: 110px;"
+                    class="b2p-section--title title ">
+                    ABOUT THE GAMES
+                </h2>
+            </div>
+            <div class="col-7" style="padding-right: 170px;">
+                <h4 style="margin-top: 95px;">
+                    Brisbane and Queensland are ready to welcome the world in 2032.</h4><br>
+                <h6>Discover how the Los Angeles Candidature Committee describes their vision for the Games and the
+                    legacy they
+                    plan to leave behind:</h6>
+                <br>
+                <h6>For centuries, people have been following the sun to California - to a coastal paradise of beautiful
+                    weather,
+                    inspiring landscapes and an ocean of possibilities. Since it was first settled, LA - the City of
+                    Angels - has
+                    built a culture of progress by harnessing creativity and imagination for reinvention. Today, LA28 is
+                    inviting
+                    the world to follow the sun on a journey of sport and innovation destined to help transform the
+                    Games to:</h6>
+
+                <ul>
+                    <li>
+                        <h6> Deliver the ultimate personalised experience for the Athletes
+                        </h6>
+                    </li>
+                    <li>
+                        <h6>Maximise our existing sports infrastructure to ensure a sustainable long-term legacy
+                        </h6>
+                    </li>
+                    <li>
+                        <h6>Produce a fresh blend of sport and entertainment to help refresh the Olympic brand worldwide
+                            and capture
+                            the imagination of youth
+                        </h6>
+                    </li>
+                    <li>
+                        <h6>Reignite America's passion for the Olympic Movement for generations to come
+                        </h6>
+                    </li>
+                    <li>
+                        <h6>Embrace the principles of Olympic Agenda 2020 through fiscally prudent Games that deliver
+                            enduring
+                            benefits to the host city and the Olympic Movement</h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="project">
+        <div class="row">
+            <div class="col-3">
+                <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_380/primary/lqdmzt3zbmjoqlkyxeay"
+                    style="object-fit: cover; width: 200px;" />
+
+            </div>
+            <!-- ----- -->
+            <div class="col-3">
+                <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_380/primary/gpo3co3bpkqsikyznrns"
+                    style="object-fit: cover; width: 200px;" />
+
+            </div>
+            <!-- ----- -->
+            <div class="col-3">
+                <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_380/primary/d3e9dswgklvosv1ywan2"
+                    style="object-fit: cover; width: 200px;" />
+
+            </div>
+            <!-- ----- -->
+            <div class="col-3">
+                <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_380/primary/sd6gix7qvjwbtn9zlrlb"
+                    style="object-fit: cover; width: 200px;" />
+
+            </div>
+            <!-- ----- -->
+            <div class="col-3 mt-2">
+                <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_380/primary/mt2p6xy5fbsxazpfjdny"
+                    style="object-fit: cover; width: 200px;" />
+
+            </div>
+
+            <!-- ----- -->
+            <div class="col-3 mt-2">
+                <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_380/v1552235080/primary/jux5g5vrxv5fnglq93yj"
+                    style="object-fit: cover; width: 200px;" />
+            </div>
+
+            <div class="col-3 mt-2">
+                <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_380/primary/waiixcg4qhnqq4fdifua"
+                    style="object-fit: cover; width: 200px;" />
+            </div>
+
+            <div class="col-3 mt-2">
+                <img src="https://img.olympicchannel.com/images/image/private/f_auto/t_1-1_380/primary/fzntd3nnabdno6x16pns"
+                    style="object-fit: cover; width: 200px;" />
+            </div>
+        </div>
+
+
+    </section>
+    <footer class="footer-distributed bg-black" id="project">
+
+        <div class="footer-left">
+            <img src="https://olympics.com/en/images/static/logo-b2p-white-v2.svg">
+            <h3>Olympics Games</h3>
+
+            <p class="footer-links">
+                <a href="home.html">Home</a>
+                |
+                <a href="paris.html">Paris 2024</a>
+                |
+                <a href="LA2028.html">LA 2028</a>
+                |
+                <a href="https://olympics.com/museum">Meusem</a>
+                |
+                <a href="faqs.html">FAQ's</a>
+
+            </p>
+
+            <p class="footer-company-name">© 2022 By Fabiha Tariq.</p>
+        </div>
+
+
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>More About Olympics</span>
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/olympics/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/Olympics?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+                        class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/olympics/?hl=en"><i class="fa fa-instagram"></i></a>
+                <a href="https://ch.linkedin.com/company/international-olympic-committee"><i
+                        class="fa fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/c/olympics"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-left">
+
+            <img src="https://olympics.com/en/images/static/b2p-badges/google-play-en.svg?q=1" class="w-50">
+        </div>
+    </footer>
+
+</body>
+
+</html>

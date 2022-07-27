@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- jquery -->
+  <script src="jquery-3.6.0.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm fixed-top" id="expand">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="ioc.html"> IOC </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="paris.html"> Paris 2024</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="milano.html"> Milano Cortina 2026</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="LA2028.html"> LA 2028</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="brisbane.html"> Brisbane 2032</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="muesum.html"> Meseum</a>
+        </li>
+      </ul>
+  </nav>
+  <nav class="navbar navbar-expand-sm bg-light fixed-top mt-5">
+    <div class="container-fluid">
+      <div class="col-sm-3">
+        <a href="home.html">
+          <img src="https://olympics.com/images/static/b2p-images/logo_color.svg">
+      </a>      </div>
+      <div class="col-sm-7 collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav " id="nav2">
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Olympics Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Ahletes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Olympics Channel</a>
+          </li>
+        </ul>
+      </div>
+      <div class="cl-sm-2">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" id="search">
+          <i class="fa-solid fa-magnifying-glass "></i>
+        </button>
+        <input style="display: none;" type="text" id="input" placeholder="Search..">
+        <script>
+          $("#search").click(function () {
+            $("#input").show();
+          });
+
+          $("#search").click(function () {
+            $("#search").hide();
+          });
+
+          $(document).ready(function () {
+            $("#search").on("keyup", function () {
+              var value = $(this).val().toLowerCase();
+              $("#project #bannerimage").filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              });
+            });
+          });
+        </script>
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+          <i class="fa-solid fa-bars "></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  </div>
+  <div class="offcanvas offcanvas-end" id="demo">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">Heading</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Some text lorem ipsum.</p>
+      <p>Some text lorem ipsum.</p>
+      <p>Some text lorem ipsum.</p>
+    </div>
+  </div>
+  <section id="work2" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8 ">
+        <div class="card border border-0">
+          <div class="card-header ml-3 border border-0">
+            <img
+              src="https://img.olympicchannel.com/images/image/private/t_16-9_760/f_auto/v1538355600/primary/ai8tacyouvbs0hqx5myy"
+              class="olytel" style="object-fit: cover;" />
+          </div>
+          <div class="card-body border border-0">
+            <p class="idonesia"><a href="#" class="text-black woo"> Its not that difficult to break the national record:
+                Avinash Sable</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 p-3 ml-4 bg-transparent">
+        <div class="card border border-0">
+          <div class="card-header border border-0">
+            <img
+              src="https://img.olympicchannel.com/images/image/private/t_16-9_760/f_auto/v1538355600/primary/p1zmnaqvrcvdnh26kay6"
+              class="olytel2" style="object-fit: cover;" />
+          </div>
+          <div class="card-body border border-0">
+            <p class="idonesia"><a href="#" class="text-black woo">Indonesia Open badminton: India's HS Prannoy in semis
+                after convincing victory against Rasmus Gemke</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="work3" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card border border-0">
+          <div class="card-header border border-0">
+            <img
+              src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/ful8jufe1je6riv4pepc"
+              class="olytel2" style="object-fit: cover;" />
+          </div>
+          <div class="card-body border border-0">
+            <p class="idonesia"><a href="#" class="text-black woo">Kuortane Games : Niraj Chopra to face world class
+                feild</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card border border-0">
+          <div class="card-header border border-0">
+            <img
+              src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/lr5dmvdggbyut6nsrazk"
+              class="olytel2" style="object-fit: cover;" />
+          </div>
+          <div class="card-body border border-0">
+            <p class="idonesia"><a href="#" class="text-black woo">Mirabai Chanu wins gold medal at Khelo India national
+                ranking women weightlifting tournament</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card border border-0">
+          <div class="card-header border border-0">
+            <img src="https://tpc.googlesyndication.com/simgad/1551260357677017047?" class="olytel2"
+              style="object-fit: cover;" />
+          </div>
+          <div class="card-body border border-0">
+            <p class="idonesia"><a href="#" class="text-black woo"></a> Paris--2024 Join the journey to the next Olympic
+              Games</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="work4" class=" container-fluid">
+    <div class="row">
+      <div class="col-sm-3 border" style="margin-left: 10px; width: 400px; margin-right: 30px;">
+        <div class="row">
+          <div class="col-4">
+            <img
+              src="https://img.olympicchannel.com/images/image/private/t_16-9_480/f_auto/v1538355600/primary/lr5dmvdggbyut6nsrazk"
+              class="uui8" style="object-fit: cover;" alt="">
+          </div>
+          <div class="col-8">
+            <span data-testing="card__title"><a class="oook" href="#">Mirabai Chanu wins gold medal at Khelo India
+                national
+                ranking women weightlifting tournament</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ml-3 border" style="margin-left: 10px; width: 400px; margin-right: 30px;">
+        <div class="row">
+          <div class="col-4 ">
+            <img
+              src="https://img.olympicchannel.com/images/image/private/t_1-1_150/f_auto/v1538355600/primary/ox8mg43tmgk4duyla6p1"
+              class="h-75 uui9" alt="">
+          </div>
+          <div class="col-8">
+            <span data-testing="card__title"><a class="oook" href="#">Women's FIH Pro LeagueSavita Punia heroics hand
+                India shootout victory over
+                champions Argentina</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 border" style="margin-left: 10px; width: 400px; margin-right: 30px;">
+        <div class="row">
+          <div class="col-4">
+            <img
+              src="https://img.olympicchannel.com/images/image/private/t_1-1_150/f_auto/v1538355600/primary/dowee8tiquugjkjabvmx"
+              class="uui9" style="object-fit: cover;" alt="">
+          </div>
+          <div class="col-8">
+            <span data-testing="card__title"><a class="oook" href="#">India's Paranti Nayak wins bronze medal at asian
+                Gymnastic ChampionShip</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <div class=" container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <img src="https://olympics.com/images/static/b2p-images/logo_color.svg" class="w-100 h-100"
+          style="background-image: transparent; margin-right: 20px; margin-top: 20px ; margin-left: 10px;" />
+      </div>
+      <div class="col-6">
+        <h2
+          style="margin-top: 20px; font-size: 120px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; line-height: 130px;"
+          class="b2p-section--title title">
+          Next <br>Games
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div id="bannerimage">
+    <div>
+      <img id="paris876"
+        src="https://img.olympicchannel.com/images/image/private/f_auto/t_s_fog_headerLogo/primary/gpo3co3bpkqsikyznrns" />
+    </div>
+    <div id="text">
+      <nav class="navbar navbar-expand-sm navbar-white bg-white">
+        <div class="container">
+
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <div class="navbar-nav me-auto">
+              <div class="row">
+                <div class="nav-item col-3">
+                  <h6>Paris 2024</h6>
+                </div>
+                <div class="nav-item pl-3 col-3">
+                  <h6 id="wer45">26 July - 11 August</h6>
+                </div>
+                <div class="nav-item col-3">
+                  <h6 id="wer45">768 days</h6>
+                </div>
+                <div class="nav-item col-3">
+                  <h6 id="wer45">France</h6>
+                </div>
+              </div>
+            </div>
+
+            <a class="btn" style="background: rgb(215, 195, 120); color: rgb(0, 0, 0);" type="button">Official Website
+
+              <img src="https://olympics.com/topic-assets/olympic-games-assets/button-arrow.svg" alt="arrow-button">
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3" style="margin-left: 60px;">
+        <div class="cards">
+          <div class="card-image"
+            style="margin-top: 60px; border: 1 solid black; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+            <img
+              src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/v1538355600/primary/d3e9dswgklvosv1ywan2"
+              style="object-fit: cover; width: 300px; height: 300px;" />
+
+            <div class="card-button">
+              <button class="btn"
+              style="color: #000;background-color: #efefef;  justify-content: center; margin-left: 80px;margin-bottom: 30px; width: 150px;">
+              <a href="milano.html" style="text-decoration: none; color: #000;;"> Explore More </a>
+            </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3" style="margin-left: 60px;">
+        <div class="cards" >
+          <div class="card-image"
+            style="margin-top: 60px; border: 1 solid black; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+            <img
+              src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/v1538355600/primary/sd6gix7qvjwbtn9zlrlb"
+              style="object-fit: cover; width: 300px; height: 300px;" />
+
+            <div class="card-button">
+              <button class="btn"
+                style="color: #000;background-color: #efefef;  justify-content: center; margin-left: 80px;margin-bottom: 30px; width: 150px;">
+                <a href="LA2028.html" style="text-decoration: none; color: #000;;"> Explore More </a>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3" style="margin-left: 60px;">
+        <div class="cards">
+          <div class="card-image"
+            style="margin-top: 60px; border: 1 solid black;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+            <img
+              src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/v1538355600/primary/mt2p6xy5fbsxazpfjdny"
+              style="object-fit: cover; width: 300px; height: 300px;" />
+
+            <div class="card-button">
+              <button class="btn"
+                style="color: #000;background-color: #efefef;  justify-content: center; margin-left: 80px;margin-bottom: 30px; width: 150px;">
+                <a href="brisbane.html" style="text-decoration: none; color: #000;;"> Explore More </a>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="container-fluid bg-black mt-5">
+    <div class="row">
+      <div class="col-6">
+        <h2
+          style="margin-top: 100px; font-size: 100px;color: #fff; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; line-height: 110px;"
+          class="b2p-section--title title ">
+          OLYMPIC <br>CHANNELS
+        </h2>
+      </div>
+      <div class="col-6">
+        <div style="margin-top: 125px;">
+          <h4 class="text-white">
+            Watch live action from your favourite sports, discover award-winning Original Films and Series and explore
+            our 24/7 thematic linear channels.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 p-5">
+      <div class="col-6">
+        <h4 class="text-white d-flex justify-content-start">
+          Originals in the spotlight
+        </h4>
+      </div>
+      <div class="col-6">
+        <a href="movieview.html" style="text-decoration: none;">
+          <h4 class="text-white d-flex justify-content-end">
+            View All
+            <img src="https://olympics.com/topic-assets/olympic-games-assets/button-arrow.svg" alt="arrow-button">
+          </h4>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div id="demo1" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- The slideshow/carousel -->
+        <div>
+          <a href="splash in.html"><img
+              src="https://img.olympicchannel.com/images/image/private/t_carousel-240X406/f_auto/v1538355600/primary/z8fwabf40m3eiizlpzl5"
+              style="width: 290px;margin-left: 20px; margin-bottom: 30px; height: 400px;"></a>
+          <a href="fromthetop.html"><img
+              src="https://img.olympicchannel.com/images/image/private/t_carousel-240X406/f_auto/v1538355600/primary/lih9xr6alda8epepwoc5"
+              style="width: 290px;margin-left: 20px; margin-bottom: 30px; height: 400px;"></a>
+          <a href="thegolden.html"><img
+              src="https://img.olympicchannel.com/images/image/private/t_carousel-240X406/f_auto/v1538355600/primary/kdyvn3vuqpns1qcaro1s"
+              style="width: 290px;margin-left: 20px; margin-bottom: 30px; height: 400px;"></a>
+          <a href="winter.html"><img
+              src="https://img.olympicchannel.com/images/image/private/t_carousel-240X406/f_auto/v1538355600/primary/l6gttfbijuenfmcu9bhn"
+              style="width: 290px;margin-left: 20px; margin-bottom: 30px; height: 400px;"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid" style="background-color: rgba(231, 33, 33, 0.94)">
+    <div class="row">
+      <div class="col-6 m-0">
+        <img
+          src="https://img.olympicchannel.com/images/image/private/t_hp_signup/f_auto/v1538355600/primary/lys8hqttmonkqqpo8dmb"
+          style="padding-left: 0%; object-fit: cover; width: 100%; height: 100vh; ">
+      </div>
+      <div class="col-6 pl-3 pe-3" style="vertical-align: middle;">
+        <div class="my-channel-signup__body d-flex flex-column align-items-xl-baseline justify-content-center">
+          <div class="subtitle-xl mt-5 mb-2">
+            <h5 style="font-size: 2.25rem;  color: #fff"> Personalise your Olympic experience</h5>
+          </div>
+          <div class="text-body mb-4 " style="font-size: 1.73rem; color: #fff; ">Stay up to date on your favourite sports
+            and athletes. Watch original Olympic
+            films and documentaries. Get exclusive stories about your favourite Olympic athletes and sports into your
+            e-mail inbox.</div>
+          <div
+            class="my-channel-signup__buttons-wrapper  text-body-sm d-flex flex-column flex-xl-row align-items-center mb-5 mb-xl-0">
+            <button class="my-channel-signup__button border border-0"
+              style="font-family: fantasy; font-size: 20px; border-radius: 2rem;" data-analytics-module="CTA"
+              data-analytics-instance="" href="/en/sign-up/"><a class="d-block text-decoration-none"
+                style="color: #000; width:200px;" data-analytics-module="CTA" data-analytics-instance=""
+                href="sign,in .html">Sign In </a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid mt-0" style="background-color: #efefef;">
+    <div class="row">
+      <div class="col-6">
+        <h2
+          style="margin-top: 100px; font-size: 100px;color: #000; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  ; line-height: 110px;"
+          class="b2p-section--title title ">
+          FEATURED<br>ATHLETES
+        </h2>
+      </div>
+      <div class="col-6">
+       
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" style="margin-bottom: 30px;">
+        <div class="col-3 mt-5 border"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+          <div class="card-image" >
+            <a href="https://olympics.com/en/athletes/eliud-kipchoge">
+              <img
+                src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/primary/sofaf1eebviulpdlbw9y"
+                class="rounded-circle w-75 m-4"></a>
+          </div>
+          <div class="card-title">
+            <h5>Eliud KIPCHOGE</h5>
+          </div>
+          <div class="card-footer">
+            <h6>Athletes</h6>
+            <img class="w-25"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAABCFBMVEUAAAAAZgC7AAD///8AZAAibiIiIiLTdHS3AAC+AAC2AAC9AADBAAAAaQAAZwAAYgAAWQCMAACfAACDAAAAXAD5+fnv7+/88fFZAAAxAAD46OiuAAA+AACWAADWgoLUeXnaj4/x1NQhAADBJiby+PjBHR3ISkroyMjADg4lAAB2AADpvLxjAADEOjrOZGRtbW2NjY3MW1vfoaFtAAAWFhbEMTFFAAAaAACkGgDAwMCqqqpcXFzi4uIOAADU1NReAABWhlYadix1mXWgtqAmbibF0cWDooNMUADX39dDfENjjmM9PT14eHhJSUmDg4OcnJwaLCyGMgNgRwArWgBtQACsvqwzWAA+VQD6NflFAAAH40lEQVR4nO2da0PTPBSAu2RAu7XbgF24ORggIuAARQRF8IqKeAFU/v8/eZssbXOWbLzqdjq783xibVqap8lJmqat4xAEQRAEQRAEQRAEQRAEQRAEQRAEQRAD4fMI7iltLo8HtKPjywHtKH0m+WCkHPPJgexnJKgPRMoxrw9gL6PCMR+AlHAnzwdwLKPCLv/7/DwP97E7kKMZEcL88L2/2sM3sYsBHc1ocMr/8ixfih2cDux4RoGvIkv8z3sXX+T22WmJJTJPtT4Jls6W+qyt8cxVHdlo9Cv8O4ttr735pNdqWfUG1MkZHV7IXPGv1pXPZvyVpttc8WaeWdfvdTb+MswDTIN6J1+2jugS8woLy+7yQsFj85b1nzubngz7ENFR59pSew59xtb4lDvF1xjzDs0EJ/3K2D9NJ2NmL+XQY8xdkU5WmE3KN35ngP5Xea6kHMDF86ESVmhJJ62CkNJVfSbVdt/wDhUPlTfYerxkxdAD49IJF38W3ZcgxanaDvNQ0YgKygt94YwoJmxfOdkXP7xFPcGLLBcT54Cb7ce0Lyy4j5WTx6746U9rKU6yXEziYKl10eekEua2lJOWdML8szjF116hOSuoPko8MrQqK05IQzlpqN/eaq9NMsdlV0SZUU7WuHIieijSyYxKsWsUrcxxCpqeJ74qFu3YSVst8dWlz3HPnl5mONCj7HykJOyxRU5WXFh7Tqx9mmyxq0WHqOYwdzt2sh076dSezhhBpoYcTfbicnIWFRPZ7CgnrciJantOMt3mROzWVDlhMYWF2MlCIVksEoXNTg2/lEwicyCKyt7B91kvccJjJ7XEiT/7/UAkdQ6wDzG6CsFE9DkaxaRAuIkT7iaLiw2VFps0nNRqfL3NtMyLhcqJpoq110VSfNJwEp78lhY32H2xTDm5ry0vtFIpJuk4qa1vaFlnj8Qy5eSRvmJjPY1iko4T/sD9X07cB6kcXTpOQDFhG2KRcmJZg04qTkA06eek0Erj8FJxMgUy3rvuMDaVxuGl0hbDfLOnYqFy8rRrXSptMUOnON21YFNzstm1brrI0EnBib96z4NLNCdwhXdv1Wfo4DspLmqXxBLteofD6OvPOYv4BQXfiRhCg+Wk0IidNKATTxuMwyMFJw8dB1aegjZ+Apx49xzn4Rg4KYo7WnMgo7K72nECO7hh1XFSqDzoTvwtMWoDyom45aWcPAZOPJF0C72g4DuRt8hnwMlvxk6a+uKiHJOdz76Tghzdg5FzI3YCuvbqhgYMuwhgO/E694LhyXdjJzCcPJRpp7t6M0MH24kMmyJy6gvdBeVkAThR8wvmsCsPejlRd4LByRc3eKSTbd2JKlIOelcW20k0t2QHZLSpnIAQ6+84ljKFALKT6Nx3BZRHygkYKfCjSVzYAQXZSXzu4f91G9JJA4QTFiXF7t5jO4knkIMeShhQhBMQTorRfAtnKdtO4nPvzIIK0ZZO9Js+zJt1rGVq+CD/v2T6Xtd4gXQCeyfJBC7kIIvrRFzoKg5hr2172V3ehk6SycPdY1BDBtlJUh8cWE72m4XmPljiJ0lns+wkaXaMcaX99j68sCkmSXdwgyyyk7kkoyBIFMRUpW1bz16A3LtHdqI9y6U3xnL2FpSSNMXojTGyE+2ZJT1wRvdAtaECLRw7zzLtJMmn3mNXxQQUFE+fYD4uTrTGRIwVSLSxAr2JGkcnLL4tmSzytsbQyVbi5H7sJJmmNJZO7ionY153KJ5QuwOg/okJ9WNNel7vuGN8vfMb18Va7Mn0dXH/8RM453Fcxk9onM1Cr/FY1zIem9SzTI/H0ri9Bbq/Y/JH9wGRm52Rvl8clamM3y+meQUWaP6Jye/MU+pMfRuDeUq2+WybPeazzacSTmjeowWaH2tC86hNaL69CT2XYTLyz+/gV51Rf87rbDye86LnAS2M/nOjludrh83IP1+cwv+k59At0PsKLNB7LUxgd1V3MrbvP+nznhwQY8fpPTn0PiUDeu+WiTj5C6P8frYJdF5xfj7x+urO9/hdvZ445/wV/gE6eWwqH3m9ks/ltLhhf99jLpev1PnHCvoROjlkym84vyjncsH1He8FvQ7CxGGZelPGPkR0J9Uaf18RfwRHfd8fexSIRJX3vFbFPkRsJ9W3nL/Li79KN33fM3xTEony7zh/iy0F2YnI40+Vx+BHn/dR/wg6iRKHeCA7AXUhrj1rsZM1UHMEcV3DA9eJiJnnccws3fR6v32xWoo3Ee0xbpjFdSLb1uRn1PYY30H4EGjbiLYb9ShRnRjnPLiyfi/jKtA3AmULA1wnRmwoHVm+q3IUgDQiBmXWSfUn5xOwDSmVOwEEfH+nXAJp8hNJW4UCopP8J0tfI/jV/Z0mdhN0pRHt8SfE9hjRSRgsa2awDD744HtexdtuJeGWNRCahw2ek/KF/dol+ODp332zKImvkZDAc9LVDicEt9r3AX9ZlGC3x2hO+gSFoHokvyPZ9I+qViUyFOG1x2hOymHj0etUl0rX4nujiz+CUo8UlbDJyp6T/EW9T6aC3O31bcleSCTl+gVay4MYY/t3MUo9y0iHahZj7L8DOTEhJybkxIScmJATE3JiQk5MyIkJOTEhJybkxIScmJATE3JiQk5MyIkJOTEhJybkxIScmJATE3JiQk5MyIkJOTEhJybkxIScmJATE3JiQk5MyIkJOTEhJyb/AfuFfh3RdJ4CAAAAAElFTkSuQmCC"
+              alt=""> Kenya
+          </div>
+        </div>
+        <div class="col-3 mt-5 border"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+          <div class="card-image">
+            <a href="https://olympics.com/en/athletes/eliud-kipchoge">
+              <img
+                src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/primary/a9uqkjgmb7tcck0gsmyf"
+                class="rounded-circle w-75 m-4"></a>
+          </div>
+          <div class="card-title">
+            <h5>Chleo KIM</h5>
+          </div>
+          <div class="card-footer">
+            <h6>United State Of America</h6>
+            <img class="w-25" src="https://olympics.com/images/static/country/flag/4x3/us.svg" alt=""> Kenya
+          </div>
+        </div>
+        <div class="col-3 mt-5 border"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+          <div class="card-image">
+            <a href="https://olympics.com/en/athletes/eliud-kipchoge">
+              <img
+                src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/primary/rdu7zkg3yogvk3xxzsfg"
+                class="rounded-circle w-75 m-4"></a>
+          </div>
+          <div class="card-title">
+            <h5>Corolina Marlin</h5>
+          </div>
+          <div class="card-footer">
+            <h6>Bedmintion</h6>
+            <img class="w-25" src="https://olympics.com/images/static/country/flag/4x3/es.svg" alt=""> Spain
+          </div>
+        </div>
+        <div class="col-3 mt-5 border"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
+          <div class="card-image">
+            <a href="https://olympics.com/en/athletes/eliud-kipchoge">
+              <img
+                src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/v1617014860/primary/rxcasyiysn9x4p51fas7"
+                class="rounded-circle w-75 m-4"></a>
+          </div>
+          <div class="card-title">
+            <h5>GU Ailing Eileen</h5>
+          </div>
+          <div class="card-footer">
+            <h6>Freestyle Skiing</h6>
+            <img class="w-25" src="https://olympics.com/images/static/country/flag/4x3/cn.svg" alt=""> People Of China
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid mt-5">
+    <div>
+      <h3>Worldwide Olympic Partners</h3>
+    </div>
+    <div class="row">
+      <div class="col-2 border m-3"> <a href="https://www.airbnb.com/"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/p3ignecngovvos6uehpf"></a>
+      </div>
+      <div class="col-2 border m-3"> <a href="https://www.alibabagroup.com/"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/o3kzbl1fie0vzxjh5vee"></a>
+      </div>
+      <div class="col-2 border m-3"> <a href="https://www.allianz.com/"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/zitbl0a0fqerljgiiesg"></a>
+      </div>
+      <div class="col-2 border m-3"> <a href="https://atos.net/"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/gfpk4nh7brfth6ws5zfu"></a>
+      </div>
+      <div class="col-2 border m-3"> <a href="https://www.bridgestone.com/"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/o4uex2zvnt3pf9pzrr4v"></a>
+      </div>
+      <div class="col-2 border m-3"> <a href="https://olympics.com/ioc/partners/coca-cola-mengniu"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/ofrkvxqwt79eyuvqq9gq"></a>
+      </div>
+      <div class="col-2 border m-3"> <a href="fromthetop.html"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/eabhdfhjn4u4dithpvld"></a>
+      </div>
+      <div class="col-2 border m-3"> <a href="https://olympics.com/ioc/partners/intel"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/hu3hc2kocmruz4lar1h3"></a>
+      </div>
+      <div class="col-2 border m-3"> <a href="https://www.omegawatches.com/"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/ifnf8t11ei3jjhrzgkcr"></a>
+      </div>
+      <div class="col-2 border m-3"> <a href="https://www.panasonic.com/"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/m62zhqai0r83rfr2xn1x"></a>
+      </div>
+      <div class="col-2 border m-3"> <a href="http://pg.com/"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/ruw9u37cg47m5txzni4m"></a>
+      </div>
+      <div class="col-2 border m-3"> <a href="https://www.samsung.com/"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/ydagfnjn9zkrfhzootoa"></a>
+      </div>
+      <div class="col-2 border m-3"> <a href="https://www.toyota.com/"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/e7sbepsgr9je11xgsudt"></a>
+      </div>
+      <div class="col-2 border m-3"> <a href="http://www.visa.com/"><img
+            src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/ne0zlfqsm5tr0m1m0yhl"></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-distributed bg-black">
+    <div class="footer-left">
+        <img src="https://olympics.com/en/images/static/logo-b2p-white-v2.svg">
+      <h3>Olympics Games</h3>
+      <p class="footer-links">
+        <a href="home.html">Home</a>
+        |
+        <a href="paris.html">Paris 2024</a>
+        |
+        <a href="LA2028.html">LA 2028</a>
+        |
+        <a href="https://olympics.com/museum">Meusem</a>
+        |
+        <a href="faqs.html">FAQ's</a>    </p>
+      <p class="footer-company-name">© 2022 By Fabiha Tariq.</p>
+    </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>More About Olympics</span>
+      </p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/olympics/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/Olympics?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/olympics/?hl=en"><i class="fa fa-instagram"></i></a>
+        <a href="https://ch.linkedin.com/company/international-olympic-committee"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/c/olympics"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+  
+    <div class="footer-left">
+      
+      <img src="https://olympics.com/en/images/static/b2p-badges/google-play-en.svg?q=1" class="w-50">
+    </div>
+  </footer>
+</body>
+
+</html>
