@@ -29,9 +29,6 @@
     <div class="container-fluid">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-secondary" href="ioc.html"> IOC </a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link text-secondary" href="paris.html"> Paris 2024</a>
         </li>
         <li class="nav-item">
@@ -53,30 +50,29 @@
       <div class="col-sm-3">
         <a href="home.html">
           <img src="https://olympics.com/images/static/b2p-images/logo_color.svg">
-      </a>      </div>
+        </a>
+      </div>
       <div class="col-sm-7 collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav " id="nav2">
           <li class="nav-item">
-            <a class="nav-link text-black" href="#">Olympics Games</a>
+            <a class="nav-link text-black" href="home.html">Olympics Games</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black" href="#">Ahletes</a>
+            <a class="nav-link text-black" href="#featured">Ahletes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black" href="#">Sports</a>
+            <a class="nav-link text-black" href="movieview.html">Sports</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black" href="#">News</a>
+            <a class="nav-link text-black" href="movieview.html">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black" href="#">Olympics Channel</a>
+            <a class="nav-link text-black" href="muesum.html">Olympics Channel</a>
           </li>
         </ul>
       </div>
       <div class="cl-sm-2">
-        <button class="btn" type="button" data-bs-toggle="offcanvas" id="search">
-          <i class="fa-solid fa-magnifying-glass "></i>
-        </button>
+      
         <input style="display: none;" type="text" id="input" placeholder="Search..">
         <script>
           $("#search").click(function () {
@@ -105,7 +101,10 @@
   </div>
   <div class="offcanvas offcanvas-end" id="demo">
     <div class="offcanvas-header">
-      <h1 class="offcanvas-title">Heading</h1>
+      <h1 class="offcanvas-title">Hello</h1>
+      <button class="btn" type="button" data-bs-toggle="offcanvas" id="search">
+        <i class="fa-solid fa-magnifying-glass "></i>
+      </button>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
     </div>
     <div class="offcanvas-body">
@@ -114,14 +113,14 @@
       <p>Some text lorem ipsum.</p>
     </div>
   </div>
-  <section id="work2" class="container-fluid">
+  <!-- <section id="work2" class="container-fluid">
     <div class="row">
-      <div class="col-sm-8 ">
+      <div class="col-sm-12  col-md-12 col-lg-8 col-12"  >
         <div class="card border border-0">
-          <div class="card-header ml-3 border border-0">
+          <div class="card-header border border-0 ">
             <img
               src="https://img.olympicchannel.com/images/image/private/t_16-9_760/f_auto/v1538355600/primary/ai8tacyouvbs0hqx5myy"
-              class="olytel" style="object-fit: cover;" />
+              />
           </div>
           <div class="card-body border border-0">
             <p class="idonesia"><a href="#" class="text-black woo"> Its not that difficult to break the national record:
@@ -129,7 +128,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-4 p-3 ml-4 bg-transparent">
+      <div class="col-sm-12 col-md-12 col-lg-4 col-12 p-3 ml-4 bg-transparent">
         <div class="card border border-0">
           <div class="card-header border border-0">
             <img
@@ -143,7 +142,21 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <section class="about section-padding" id="about">
+		<div class="container">
+			<div class="row mt-5">
+        <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+          <div class="about-img"><img alt="" class="img-fluid" src="https://img.olympicchannel.com/images/image/private/t_16-9_760/f_auto/v1538355600/primary/ai8tacyouvbs0hqx5myy"></div>
+				</div>
+				<div class="col-lg-4 col-md-12 col-12">
+          <div class="about-img"><img alt="" class="img-fluid qwer" src="https://img.olympicchannel.com/images/image/private/t_16-9_760/f_auto/v1538355600/primary/p1zmnaqvrcvdnh26kay6"></div>
+				</div>
+			
+			</div>
+		</div>
+	</section>
+  
   <section id="work3" class="container-fluid">
     <div class="row">
       <div class="col-sm-4">
@@ -174,7 +187,7 @@
       </div>
       <div class="col-sm-4">
         <div class="card border border-0">
-          <div class="card-header border border-0">
+          <div class="card-header border border-0 lg-12 md-12 sm-12">
             <img src="https://tpc.googlesyndication.com/simgad/1551260357677017047?" class="olytel2"
               style="object-fit: cover;" />
           </div>
@@ -236,7 +249,7 @@
     <div class="row">
       <div class="col-6">
         <img src="https://olympics.com/images/static/b2p-images/logo_color.svg" class="w-100 h-100"
-          style="background-image: transparent; margin-right: 20px; margin-top: 20px ; margin-left: 10px;" />
+          style="background-image: transparent; margin-right: 20px; margin-top: 10px ; margin-left: 10px; margin-bottom: 50px;" />
       </div>
       <div class="col-6">
         <h2
@@ -247,109 +260,47 @@
       </div>
     </div>
   </div>
-  <div id="bannerimage">
-    <div>
-      <img id="paris876"
-        src="https://img.olympicchannel.com/images/image/private/f_auto/t_s_fog_headerLogo/primary/gpo3co3bpkqsikyznrns" />
-    </div>
-    <div id="text">
-      <nav class="navbar navbar-expand-sm navbar-white bg-white">
-        <div class="container">
 
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <div class="navbar-nav me-auto">
-              <div class="row">
-                <div class="nav-item col-3">
-                  <h6>Paris 2024</h6>
-                </div>
-                <div class="nav-item pl-3 col-3">
-                  <h6 id="wer45">26 July - 11 August</h6>
-                </div>
-                <div class="nav-item col-3">
-                  <h6 id="wer45">768 days</h6>
-                </div>
-                <div class="nav-item col-3">
-                  <h6 id="wer45">France</h6>
-                </div>
-              </div>
-            </div>
-
-            <a class="btn" style="background: rgb(215, 195, 120); color: rgb(0, 0, 0);" type="button">Official Website
-
-              <img src="https://olympics.com/topic-assets/olympic-games-assets/button-arrow.svg" alt="arrow-button">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+        <div class="card">
+          <img src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/v1538355600/primary/d3e9dswgklvosv1ywan2" class="card-img">
+          <div class="card-body">
+            <a href="milano.html" class="btn btn-primary">Explore More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+        <div class="card">
+          <img src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/v1538355600/primary/sd6gix7qvjwbtn9zlrlb" class="card-img">
+          <div class="card-body">
+            <a href="LA2028.html" class="btn btn-primary">Explore More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+        <div class="card">
+          <img src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/v1538355600/primary/mt2p6xy5fbsxazpfjdny" class="card-img">
+          <div class="card-body">
+            <a href="brisbane.html" class="btn btn-primary">Explore More
             </a>
           </div>
         </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-3" style="margin-left: 60px;">
-        <div class="cards">
-          <div class="card-image"
-            style="margin-top: 60px; border: 1 solid black; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
-            <img
-              src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/v1538355600/primary/d3e9dswgklvosv1ywan2"
-              style="object-fit: cover; width: 300px; height: 300px;" />
-
-            <div class="card-button">
-              <button class="btn"
-              style="color: #000;background-color: #efefef;  justify-content: center; margin-left: 80px;margin-bottom: 30px; width: 150px;">
-              <a href="milano.html" style="text-decoration: none; color: #000;;"> Explore More </a>
-            </button>
-
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="col-3" style="margin-left: 60px;">
-        <div class="cards" >
-          <div class="card-image"
-            style="margin-top: 60px; border: 1 solid black; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
-            <img
-              src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/v1538355600/primary/sd6gix7qvjwbtn9zlrlb"
-              style="object-fit: cover; width: 300px; height: 300px;" />
 
-            <div class="card-button">
-              <button class="btn"
-                style="color: #000;background-color: #efefef;  justify-content: center; margin-left: 80px;margin-bottom: 30px; width: 150px;">
-                <a href="LA2028.html" style="text-decoration: none; color: #000;;"> Explore More </a>
-              </button>
-
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-3" style="margin-left: 60px;">
-        <div class="cards">
-          <div class="card-image"
-            style="margin-top: 60px; border: 1 solid black;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
-            <img
-              src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/v1538355600/primary/mt2p6xy5fbsxazpfjdny"
-              style="object-fit: cover; width: 300px; height: 300px;" />
-
-            <div class="card-button">
-              <button class="btn"
-                style="color: #000;background-color: #efefef;  justify-content: center; margin-left: 80px;margin-bottom: 30px; width: 150px;">
-                <a href="brisbane.html" style="text-decoration: none; color: #000;;"> Explore More </a>
-              </button>
-
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <section class="container-fluid bg-black mt-5">
     <div class="row">
-      <div class="col-6">
+      <div class="col-sm-6 col-md-6 col-lg-6 col-12">
         <h2
           style="margin-top: 100px; font-size: 100px;color: #fff; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; line-height: 110px;"
           class="b2p-section--title title ">
           OLYMPIC <br>CHANNELS
         </h2>
       </div>
-      <div class="col-6">
+      <div class="col-sm-6 col-md-6 col-lg-6 col-12">
         <div style="margin-top: 125px;">
           <h4 class="text-white">
             Watch live action from your favourite sports, discover award-winning Original Films and Series and explore
@@ -377,20 +328,40 @@
       <div id="demo1" class="carousel slide" data-bs-ride="carousel">
 
         <!-- The slideshow/carousel -->
-        <div>
-          <a href="splash in.html"><img
-              src="https://img.olympicchannel.com/images/image/private/t_carousel-240X406/f_auto/v1538355600/primary/z8fwabf40m3eiizlpzl5"
-              style="width: 290px;margin-left: 20px; margin-bottom: 30px; height: 400px;"></a>
-          <a href="fromthetop.html"><img
-              src="https://img.olympicchannel.com/images/image/private/t_carousel-240X406/f_auto/v1538355600/primary/lih9xr6alda8epepwoc5"
-              style="width: 290px;margin-left: 20px; margin-bottom: 30px; height: 400px;"></a>
-          <a href="thegolden.html"><img
-              src="https://img.olympicchannel.com/images/image/private/t_carousel-240X406/f_auto/v1538355600/primary/kdyvn3vuqpns1qcaro1s"
-              style="width: 290px;margin-left: 20px; margin-bottom: 30px; height: 400px;"></a>
-          <a href="winter.html"><img
-              src="https://img.olympicchannel.com/images/image/private/t_carousel-240X406/f_auto/v1538355600/primary/l6gttfbijuenfmcu9bhn"
-              style="width: 290px;margin-left: 20px; margin-bottom: 30px; height: 400px;"></a>
-        </div>
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                  <div class="card">
+                      <a href="splash in.html">
+                      <img src="https://img.olympicchannel.com/images/image/private/t_carousel-240X406/f_auto/v1538355600/primary/nc7l7nqg57cqhnsebsno" class="card-img">
+                  </a>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                  <div class="card">
+                      <a href="fromthetop.html">
+                      <img src="https://img.olympicchannel.com/images/image/private/t_carousel-240X406/f_auto/v1538355600/primary/z8fwabf40m3eiizlpzl5" class="card-img">
+                  </a>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                  <div class="card">
+                      <a href="thegolden.html">
+                      <img src="https://img.olympicchannel.com/images/image/private/t_carousel-240X406/f_auto/v1538355600/primary/h48w6ouazoptnpmfagxf" class="card-img">
+                  </a>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                  <div class="card">
+                      <a href="winter.html">
+                      <img src="https://img.olympicchannel.com/images/image/private/t_carousel-240X406/f_auto/v1538355600/primary/l6gttfbijuenfmcu9bhn" class="card-img">
+                  </a>
+                  </div>
+              </div>
+             
+              
+          </div>
+         </div>
       </div>
     </div>
   </section>
@@ -407,7 +378,8 @@
           <div class="subtitle-xl mt-5 mb-2">
             <h5 style="font-size: 2.25rem;  color: #fff"> Personalise your Olympic experience</h5>
           </div>
-          <div class="text-body mb-4 " style="font-size: 1.73rem; color: #fff; ">Stay up to date on your favourite sports
+          <div class="text-body mb-4 " style="font-size: 1.73rem; color: #fff; ">Stay up to date on your favourite
+            sports
             and athletes. Watch original Olympic
             films and documentaries. Get exclusive stories about your favourite Olympic athletes and sports into your
             e-mail inbox.</div>
@@ -424,7 +396,7 @@
     </div>
   </section>
 
-  <section class="container-fluid mt-0" style="background-color: #efefef;">
+  <section class="container-fluid mt-0" id="featured" style="background-color: #efefef;">
     <div class="row">
       <div class="col-6">
         <h2
@@ -434,7 +406,7 @@
         </h2>
       </div>
       <div class="col-6">
-       
+
       </div>
     </div>
 
@@ -442,7 +414,7 @@
       <div class="row" style="margin-bottom: 30px;">
         <div class="col-3 mt-5 border"
           style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
-          <div class="card-image" >
+          <div class="card-image">
             <a href="https://olympics.com/en/athletes/eliud-kipchoge">
               <img
                 src="https://img.olympicchannel.com/images/image/private/t_1-1_300/f_auto/primary/sofaf1eebviulpdlbw9y"
@@ -515,54 +487,96 @@
       <h3>Worldwide Olympic Partners</h3>
     </div>
     <div class="row">
-      <div class="col-2 border m-3"> <a href="https://www.airbnb.com/"><img
+      <div class="col-md-2 col-lg-3 col-sm-4 col-12 border m-3"> 
+        <div class="card">
+          <a href="https://www.airbnb.com/"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/p3ignecngovvos6uehpf"></a>
-      </div>
-      <div class="col-2 border m-3"> <a href="https://www.alibabagroup.com/"><img
+        </div>
+             </div>
+      <div class="col-md-2 col-lg-3 col-sm-4 border col-12 m-3">
+        <div class="card">
+          <a href="https://www.alibabagroup.com/"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/o3kzbl1fie0vzxjh5vee"></a>
-      </div>
-      <div class="col-2 border m-3"> <a href="https://www.allianz.com/"><img
+        </div>
+              </div>
+      <div class="col-md-2 col-lg-3 col-sm-4 col-12 border m-3"> 
+        <div class="card">
+          <a href="https://www.allianz.com/"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/zitbl0a0fqerljgiiesg"></a>
       </div>
-      <div class="col-2 border m-3"> <a href="https://atos.net/"><img
+      </div>
+      <div class="col-md-2 col-lg-3 col-sm-4 col-12 border m-3"> 
+        <div class="card">
+          <a href="https://atos.net/"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/gfpk4nh7brfth6ws5zfu"></a>
       </div>
-      <div class="col-2 border m-3"> <a href="https://www.bridgestone.com/"><img
+      </div>
+      <div class="col-md-2 col-lg-3 col-sm-4 col-12 border m-3">
+        <div class="card">
+           <a href="https://www.bridgestone.com/"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/o4uex2zvnt3pf9pzrr4v"></a>
       </div>
-      <div class="col-2 border m-3"> <a href="https://olympics.com/ioc/partners/coca-cola-mengniu"><img
+      </div>
+      <div class="col-md-2 col-lg-3 col-sm-4 col-12 border m-3">
+        <div class="card">
+           <a href="https://olympics.com/ioc/partners/coca-cola-mengniu"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/ofrkvxqwt79eyuvqq9gq"></a>
       </div>
-      <div class="col-2 border m-3"> <a href="fromthetop.html"><img
+      </div>
+      <div class="col-md-2 col-lg-3 col-sm-4 col-12 border m-3">
+        <div class="card">
+           <a href="fromthetop.html"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/eabhdfhjn4u4dithpvld"></a>
       </div>
-      <div class="col-2 border m-3"> <a href="https://olympics.com/ioc/partners/intel"><img
+      </div>
+      <div class="col-md-2 col-lg-3 col-sm-4 col-12 border m-3">
+        <div class="card">
+           <a href="https://olympics.com/ioc/partners/intel"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/hu3hc2kocmruz4lar1h3"></a>
       </div>
-      <div class="col-2 border m-3"> <a href="https://www.omegawatches.com/"><img
+      </div>
+      <div class="col-md-2 col-lg-3 col-sm-4 col-12 border m-3"> 
+        <div class="card">
+          <a href="https://www.omegawatches.com/"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/ifnf8t11ei3jjhrzgkcr"></a>
       </div>
-      <div class="col-2 border m-3"> <a href="https://www.panasonic.com/"><img
+      </div>
+      <div class="col-md-2 col-lg-3 col-sm-4 col-12 border m-3"> 
+        <div class="card">
+          <a href="https://www.panasonic.com/"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/m62zhqai0r83rfr2xn1x"></a>
       </div>
-      <div class="col-2 border m-3"> <a href="http://pg.com/"><img
+      </div>
+      <div class="col-md-2 col-lg-3 col-sm-4 col-12 border m-3">
+        <div class="card"> 
+          <a href="http://pg.com/"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/ruw9u37cg47m5txzni4m"></a>
       </div>
-      <div class="col-2 border m-3"> <a href="https://www.samsung.com/"><img
+      </div>
+      <div class="col-md-2 col-lg-3 col-sm-4 col-12 border m-3">
+        <div class="card">
+           <a href="https://www.samsung.com/"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/ydagfnjn9zkrfhzootoa"></a>
       </div>
-      <div class="col-2 border m-3"> <a href="https://www.toyota.com/"><img
+      </div>
+      <div class="col-md-2 col-lg-3 col-sm-4 col-12 border m-3"> 
+        <div class="card">
+          <a href="https://www.toyota.com/"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/e7sbepsgr9je11xgsudt"></a>
       </div>
-      <div class="col-2 border m-3"> <a href="http://www.visa.com/"><img
+      </div>
+      <div class="col-md-2 col-lg-3 col-sm-4 col-12 border m-3">
+        <div class="card">
+           <a href="http://www.visa.com/"><img class="card-img"
             src="https://img.olympicchannel.com/images/image/private/t_original/f_auto/v1538355600/primary/ne0zlfqsm5tr0m1m0yhl"></a>
+      </div>
       </div>
     </div>
   </section>
 
   <footer class="footer-distributed bg-black">
     <div class="footer-left">
-        <img src="https://olympics.com/en/images/static/logo-b2p-white-v2.svg">
+      <img src="https://olympics.com/en/images/static/logo-b2p-white-v2.svg">
       <h3>Olympics Games</h3>
       <p class="footer-links">
         <a href="home.html">Home</a>
@@ -573,7 +587,8 @@
         |
         <a href="https://olympics.com/museum">Meusem</a>
         |
-        <a href="faqs.html">FAQ's</a>    </p>
+        <a href="faqs.html">FAQ's</a>
+      </p>
       <p class="footer-company-name">© 2022 By Fabiha Tariq.</p>
     </div>
     </div>
@@ -583,15 +598,16 @@
       </p>
       <div class="footer-icons">
         <a href="https://www.facebook.com/olympics/"><i class="fa fa-facebook"></i></a>
-        <a href="https://twitter.com/Olympics?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"></i></a>
+        <a href="https://twitter.com/Olympics?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+            class="fa fa-twitter"></i></a>
         <a href="https://www.instagram.com/olympics/?hl=en"><i class="fa fa-instagram"></i></a>
         <a href="https://ch.linkedin.com/company/international-olympic-committee"><i class="fa fa-linkedin"></i></a>
         <a href="https://www.youtube.com/c/olympics"><i class="fa fa-youtube"></i></a>
       </div>
     </div>
-  
+
     <div class="footer-left">
-      
+
       <img src="https://olympics.com/en/images/static/b2p-badges/google-play-en.svg?q=1" class="w-50">
     </div>
   </footer>

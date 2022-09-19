@@ -17,6 +17,12 @@
 	color: grey;
 	;
 }
+.img-fluid{
+	margin-top: 100px;
+}
+.qwer{
+	margin-top: 100px;
+}
 
 #nav2 {
 	font-size: 15px;
@@ -29,6 +35,7 @@
 
 #work2 {
 	margin-top: 150px;
+
 }
 
 #work3 {
@@ -73,9 +80,6 @@
 .woo {
 	text-decoration: none;
 }
-
-
-
 .olytel2 {
 	width: 90%;
 	/* object-fit: cover; */
@@ -108,18 +112,28 @@
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
+/* .img-jumbo{
+    background-image:url(https://img.olympicchannel.com/images/image/private/f_auto/t_16-9_1920/primary/ufiinqivfn8ig30anqpe);
+    /* background-size: 100%, 100%; */
 
+	/* background-position: center; */
+	/* background-repeat: no-repeat; */
+/* } 
 
-#bannerimage {
-	width: 100%;
-	background-image: url(https://img.olympicchannel.com/images/image/private/f_auto/t_16-9_1920/primary/ufiinqivfn8ig30anqpe);
-	height: 100vh;
-	margin-top: 45px;
-	background-position: center;
+/* .page-title #text{
+	color: #000000;
+	font-size: 20px;
+	font-weight: 200;
+	text-transform: uppercase;
+} */
+
+.overlay{
+	/* background-image: url(https://img.olympicchannel.com/images/image/private/f_auto/t_16-9_1920/primary/ufiinqivfn8ig30anqpe); */
+	background-color: #000000;
+	margin-top: 30px;
 }
 
-
-#bannerimage2 {
+#bannerimage2{
 	width: 100%;
 	background-image: url(https://img.olympicchannel.com/images/image/private/f_auto/t_16-9_1920/primary/ydp1s182raecjot712fb);
 	height: 100vh;
@@ -203,21 +217,6 @@
 	height: 400px;
 }
 
-#paris87 {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: white;
-	margin-top: 125px;
-	margin-left: 400px;
-	width: 500px;
-	height: 400px;
-}
-
-#text {
-	padding-top: 40px;
-	padding-left: 30px;
-	padding-right: 50px;
-}
 
 #wer45 {
 	padding-top: 20px;
@@ -430,3 +429,5 @@ footer {
 	height: 90VH;
 	position: center;
 }
+
+
